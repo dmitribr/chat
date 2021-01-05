@@ -1,0 +1,698 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.bigred{
+	font-size: 20px;
+	color: red;
+}
+/*фон страницы*/
+.fonn {
+	background: url('img/fonn2.png') 0 0/cover no-repeat;
+	width: 100%;
+	height: 100%;
+	min-height: 564px;
+	margin: 0px 0px;
+}
+            /*навигация слева*/
+nav {
+	position: absolute;
+	background-color: #000000;
+	left: 0px;
+    top: 0px;
+    bottom: 0px;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    width: 72px;
+    min-height: 564px;
+}          
+       /*точки */
+.dot {
+	width: 52px;
+	height: 12px;
+	margin-left: 9px;
+    margin-top: 10px;
+}
+         /*метка*/ 
+.metka {
+	position: absolute;
+    left: -4px;
+    top: 7.5%;
+	width: 8px;
+	height: 8px;
+	background-color: #8F8F8F;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+          /* круглые кнопки слева*/
+img.nom1 {
+	position: absolute;
+    left: 14px;
+    top: 5.19%;
+    border-radius: 45%;
+    -moz-border-radius: 45%;
+    -webkit-border-radius: 45%;
+    opacity: 0.3;
+}
+img.nom2 {
+	position: absolute;
+    left: 14px;
+    top: 13.19%;
+    mix-blend-mode: normal;
+    border-radius: 45%;
+    -moz-border-radius: 45%;
+    -webkit-border-radius: 45%;
+    opacity: 0.3;
+}
+img.nom2:hover {
+	opacity: 1;
+}
+img.nom3 {
+	position: absolute;
+    left: 14px;
+    top: 21.19%;
+    border-radius: 45%;
+    -moz-border-radius: 45%;
+    -webkit-border-radius: 45%;
+    opacity: 0.3;
+}
+img.nom3:hover {
+	opacity: 1;
+}
+img.nom4 {
+	position: absolute;
+    left: 14px;
+    top: 29.19%;
+    border-radius: 45%;
+    -moz-border-radius: 45%;
+    -webkit-border-radius: 45%;
+    opacity: 0.3;   
+}
+img.nom4:hover {
+	opacity: 1;
+}
+img.nom5 {
+    position: absolute;
+    left: 14px;
+    top: 37.19%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    opacity: 0.3; 
+}
+img.nom5:hover {
+	opacity: 1;
+}
+img.nom6 {
+    position: absolute;
+    left: 14px;
+    top: 45.19%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    opacity: 0.3;
+}
+img.nom6:hover {
+	opacity: 1;
+}
+img.nom7 {
+    position: absolute;
+    left: 14px;
+    top: 53.19%;
+    border-radius: 45%;
+    -moz-border-radius: 45%;
+    -webkit-border-radius: 45%;
+    opacity: 0.3;
+}
+img.nom7:hover {
+	opacity: 1;
+}
+img.nom8 {
+    position: absolute;
+    left: 14px;
+    bottom: 1.88%;
+    border-radius: 45%;
+    -moz-border-radius: 45%;
+    -webkit-border-radius: 45%;
+    opacity: 0.3;
+}
+img.nom8:hover {
+	opacity: 1;
+}
+     /*выпалзающее меню*/
+
+.menu {
+    position: absolute;
+    width: 262px;
+    height: 100%;
+    min-height: 564px;
+	left: 72px;
+	top: 0px;
+    background: #25272A;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    display: none;
+}
+.prob {
+	height: 0px;
+	width: 0px;
+}
+.dop {
+	position: absolute;
+    width: 22px;
+    height: 100%;
+    min-height: 564px;
+	left: -22px;
+	top: 0px;
+	display: block;
+}
+.prob:hover .menu {
+	display: block;
+}
+.prob:hover img.nom1 {
+	opacity: 1;
+}
+button.nomad {
+	position: absolute;
+    margin-left: 26px;
+    margin-top: 35px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+/* identical to box height */
+    color: #FFFFFF;
+    background: none;
+}
+img.strelka {
+	position: absolute;
+    left: 132px;
+    top: 45px;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+    /*меню nomad*/
+.podmenu {
+	position: absolute;
+	text-align: center;
+	left: 15px;
+	top: 59px;
+	width: 120px;
+	height: 50px;
+	display: none;
+	background: #25272A;
+	z-index: 4;
+}
+a.white, .black {
+	margin-top: 5px;
+	font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: block;
+    opacity: 0.6;
+}
+a.black:hover {
+	opacity: 1;
+}
+a.white:hover {
+	opacity: 1;
+}
+div.podnomad:hover .podmenu {
+	display: block;
+}
+         /*значок настройки*/
+img.nastr {
+	position: absolute;
+    left: 221px;
+    top: 41px;
+    background: #25272A;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+a.anastr:hover img.nastr {
+	opacity: 1;
+}
+             /*all treads*/
+.znak_sms {
+	background: url('img/znaksms.png') 0 0/cover no-repeat;
+	position: absolute;
+    left: 23px;
+    top: 90px;
+    width: 18px;
+    height: 18px;
+    z-index: 1;
+}
+a.allt {
+	position: absolute;
+    left: 52px;
+    top: 89px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    z-index: 1;
+}      
+a.allt:hover {
+    opacity: 1;
+}
+          /*хештеги*/
+p.chann {
+	position: absolute;
+    left: 24px;
+    top: 138px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #919191;
+}
+              /*div для хештегов*/
+.skroll {
+	position: absolute;
+	overflow: auto;
+	top: 167px;
+	margin-left: 23px;
+	bottom: 190px;
+	max-height: 410px;
+	min-height: 100px;
+	height: calc(100% - (167 + 190));
+	height: -webkit-calc(100% - (167 + 190));
+	height: -moz-calc(100% - (167 + 190));
+	width: 230px;
+}
+      /*хеши*/
+a.general {
+	display: block;
+	width: 213px;
+    height: 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+p.generalp {
+	padding-left: 13px;
+    padding-top: 4px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+a.general:hover {
+	background-color: #000000;
+	opacity: 0.8;
+}
+a.general:active {
+	opacity: 1;
+}
+     /*cписок друзей в меню*/
+a.friends {
+	position: absolute;
+    margin-left: 25px;
+    bottom: 149px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #919191;
+}
+a.friends:hover {
+	color: #FFFFFF;
+}
+p.friendsnom {
+	position: absolute;
+    left: 222px;
+    bottom: 149px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #919191;
+}
+    /*вспомогательный див для кнопки френдс*/
+div.vspom {
+	height: 0px;
+	width: 0px;
+}
+div.vspom:hover .friendsnom {
+	color: #FFFFFF;
+}
+                /*точки */
+.dott, .dott2, .dott3 {
+	position: absolute;
+	display: block;
+    left: 23px;
+    bottom: 115px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #70CC16;
+}
+.dott2 {
+	bottom: 71px;
+}
+.dott3 {
+	bottom: 27px;
+	background: #666666;
+}
+                /*фото и имена друзей*/
+
+img.foto1, .foto2, .foto3 {
+	position: absolute;
+	left: 38px;
+    bottom: 103px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+img.foto2 {
+	bottom: 58px;
+}
+img.foto3 {
+	bottom: 14px;
+}
+p.foto11, .foto22, .foto33 {
+	position: absolute;
+    left: 82px;
+    bottom: 112px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B5B5B5;
+}
+p.foto22 {
+    bottom: 68px;
+}
+p.foto33 {
+    bottom: 24px;
+}
+a.foto111:hover img.foto1 {
+	border: 2px solid white;
+}
+a.foto111:hover p.foto11 {
+	color: #FFFFFF;
+}
+a.foto222:hover img.foto2 {
+	border: 2px solid white;
+}
+a.foto222:hover p.foto22 {
+	color: #FFFFFF;
+}
+a.foto333:hover img.foto3 {
+	border: 2px solid white;
+}
+a.foto333:hover p.foto33 {
+	color: #FFFFFF;
+}
+       /*верхняя полоса меню, диалог */
+content {
+	position: absolute;
+	top: 0px;
+	left: 75px;
+	right: 0px;
+	width: calc(100% - 75);
+	width: -webkit-calc(100% - 75);
+	width: -moz-calc(100% - 75);
+	height: 100%;
+	background-color: #FFFFFF;
+	transition-duration: .3s;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	-o-transition-duration: .3s;
+}
+p.gener {
+	position: absolute;
+    margin-left: 23px;
+    margin-top: 35px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+nav:hover + content {
+	left: 334px;
+}
+.zvezda {
+	height: 15px;
+	width: 15px;
+	background-image: url("img/zvezda.png");
+	margin-left: 108px;
+	margin-top: 39px;
+	background-position: 0px 0px;
+}
+.zvezda:hover {
+	background-position: 0px -15px;
+}
+.chel {
+	position: absolute;
+	float: right;
+	right: 394px;
+	top: 40px;
+}
+.kolih {
+	position: absolute;
+	float: right;
+    right: 353px;
+    top: 39px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #A4A4A4;
+}
+input.search {
+	position: absolute;
+    right: 88px;
+    top: 32px;
+    background: rgba(0, 0, 0, 0.0001);
+    border: 0.5px solid rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    height: 32px;
+    width: 240px;
+    padding-left: 8px;
+
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+}
+img.kolok {
+	position: absolute;
+    right: 50px;
+    top: 40px;
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+}
+img.kolok:hover {
+	opacity: 1;
+}
+.tohkr {
+	position: absolute;
+	right: 48px;
+	top: 39px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+	background-color: #FD4948;
+}
+img.tohki {
+	position: absolute;
+    right: 23px;
+    top: 39px;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+img.tohki:hover {
+	opacity: 1;
+}
+.linee {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+    height: 2px;
+
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.24;
+}
+   /*окно переписки(диалога)*/
+
+.dialog { 
+	overflow: auto;
+    margin: 0px 0px 75px 0px;
+    height: calc(100% - (80px + 75px));
+    height: -webkit-calc(100% - (80px + 75px));
+    height: -moz-calc(100% - (80px + 75px));
+    width: 100%;
+}
+.soob {
+	margin: 24px;
+	margin-left: 56px;
+}
+img.drug {
+	display: inline-block;
+	margin-left: -32px;
+	margin-top: 0px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+a.jesh {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 0px;
+	font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+p.time {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 0px;
+	font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8D8D8D;
+}
+p.textt {
+	display: block;
+	margin: -10px 10px 10px 14px;
+	font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+}
+         /*отправка сообщений*/
+.massan {
+	margin-left: 0px;
+	margin-top: -75px;
+	border: 3px solid silver;
+	width: 100%;
+	height: 66px;
+}
+img.skrep {
+	margin-left: 24px;
+	margin-top: 20px;
+    opacity: 0.4;
+}
+img.skrep:hover {
+	opacity: 1;
+}
+img.micr {
+	margin-left: 24px;
+	margin-top: 20px;
+    opacity: 0.4;
+}
+img.micr:hover {
+	opacity: 1;
+}
+textarea {
+	margin-left: 30px;
+	margin-top: 10px;
+	font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 400px;
+    width: 400px;
+    max-height: 40px;
+    border: 1px solid silver;
+    padding: 4px;
+}
+img.smile {
+	margin-left: 5px;
+	margin-top: 20px;
+    opacity: 0.4;
+}
+img.smile:hover {
+	opacity: 1;
+}
+img.goo {
+	margin-left: 5px;
+	margin-top: 19px;
+    opacity: 0.4;
+}
+img.goo:hover {
+	opacity: 1;
+}
