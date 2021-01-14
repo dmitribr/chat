@@ -43,6 +43,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: red;
 }
 /*фон страницы*/
+bogy {
+	min-width: 925px;
+}
 .fonn {
 	background: url('img/fonn2.png') 0 0/cover no-repeat;
 	width: 100%;
